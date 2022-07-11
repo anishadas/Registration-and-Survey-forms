@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisha's Recipe Book</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            box-sizing: border-box;
+            padding: 30px;
+            margin: 40px;
+        }
+        .form-style-1 {
+            
+            max-width: 100%;
+            padding: 10px;
+            font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 1em;
+        }
+
+        .form-style-1 li {
+            padding: 0;
+            display: block;
+            list-style: none;
+            margin: 10px 0 20px 0;
+        }
+
+        .form-style-1 label {
+            margin: 0 0 3px 0;
+            padding: 0px;
+            display: block;
+            font-weight: bold;
+        }
+        .form-style-1 input[type=text],
+        .form-style-1 input[type=email]{
+            width: 250px;
+            padding: 3px;
+            border-radius: 4px;
+            margin-right: 10px;
+            height: 25px;
+            font-size: 1em;
+        }
+        .form-style-1 input[type=date]{
+            padding: 3px;
+            border-radius: 4px;
+            margin: 10px;
+        }
+        .form-style-1:hover{
+            background-color: rgb(191, 208, 222);
+            border-radius: 4px;
+        }
+        
+        .questions li{
+            font-weight: 700;
+            padding: 15px 0px 15px 0px;
+        }
+        th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            
+        }
+        table th{
+            background-color: rgb(214, 214, 238);
+        }
+        table td{
+            text-align: center;
+        }
+        table input[type=radio]{
+            transition: all 0.5s ease-in-out;
+            accent-color: red;
+        }
+        table td:hover{
+            background-color: azure;
+        }
+        textarea{
+            height: 60px;
+            width: 600px;
+            border-radius: 4px;
+            padding: 5px;
+            
+        }
+        button{
+            border-radius: 4px;
+            padding: 5px;
+            margin: 10px;
+            color: aqua;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+            background-color:black;
+            width:100px;
+        }
+        button:hover{
+            font-weight: 900;
+            border: 2px solid aqua;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center; color:rgb(143, 48, 69)">EMPLOYEE SATISFACTION SURVEY</h1><br>
+        <hr>
+        <div class="div1">
+            <form>
+                <ul class="form-style-1">
+                    <li><label>Full Name <span class="required">*</span></label>
+                        <input type="text" name="field1" class="field-divided" placeholder="First" />
+                        <input type="text" name="field2" class="field-divided" placeholder="Last" />
+                    </li>
+                    <li>
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="field3" class="field-long" />
+                    </li>
+                    <li>
+                        <label>Company Name</label>
+                        <input type="text" name="field4" class="field-long">
+                        <input type="date" name="field5" class="field-long">
+                    </li>
+                </ul>
+            </form>
+            <hr>
+            <ol class="questions">
+                <li>How would you describe your overall job satisfaction?</li>
+            <form>
+                <input type="radio" id="Very Satisfied" name="satisfy" value="Very Satisfied">
+                <label for="Very Satisfied">Very Satisfied</label><br>
+                <input type="radio" id="Somewhat Satisfied" name="satisfy" value="Somewhat Satisfied">
+                <label for="Somewhat Satisfied">Somewhat Satisfied</label><br>
+                <input type="radio" id="Neutral" name="satisfy" value="Neutral">
+                <label for="Neutral">Neutral</label><br>
+                <input type="radio" id="Very Dissatisfied" name="satisfy" value="Very Dissatisfied">
+                <label for="Very Dissatisfied">Very Dissatisfied</label><br>
+            </form>
+            <li>How would you rate the following?</li>
+            <table style="border:none">
+                <tr>
+                    <td style="border:none ;"></td>
+                    <th style="border-top-left-radius:4px">Very poor</th>
+                    <th>Poor</th>
+                    <th>Average</th>
+                    <th>Good</th>
+                    <th style="border-top-right-radius:4px">Excellent</th>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Salary</th>
+                    <td><input type="radio" name="radio1"></td>
+                    <td><input type="radio" name="radio1"></td>
+                    <td><input type="radio" name="radio1"></td>
+                    <td><input type="radio" name="radio1"></td>
+                    <td><input type="radio" name="radio1"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Overall benefits</th>
+                    <td><input type="radio" name="radio2"></td>
+                    <td><input type="radio" name="radio2"></td>
+                    <td><input type="radio" name="radio2"></td>
+                    <td><input type="radio" name="radio2"></td>
+                    <td><input type="radio" name="radio2"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Health benefits</th>
+                    <td><input type="radio" name="radio3"></td>
+                    <td><input type="radio" name="radio3"></td>
+                    <td><input type="radio" name="radio3"></td>
+                    <td><input type="radio" name="radio3"></td>
+                    <td><input type="radio" name="radio3"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Senior Leadership</th>
+                    <td><input type="radio" name="radio4"></td>
+                    <td><input type="radio" name="radio4"></td>
+                    <td><input type="radio" name="radio4"></td>
+                    <td><input type="radio" name="radio4"></td>
+                    <td><input type="radio" name="radio4"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Recognition</th>
+                    <td><input type="radio" name="radio5"></td>
+                    <td><input type="radio" name="radio5"></td>
+                    <td><input type="radio" name="radio5"></td>
+                    <td><input type="radio" name="radio5"></td>
+                    <td><input type="radio" name="radio5"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Training Opportunities</th>
+                    <td><input type="radio" name="radio6"></td>
+                    <td><input type="radio" name="radio6"></td>
+                    <td><input type="radio" name="radio6"></td>
+                    <td><input type="radio" name="radio6"></td>
+                    <td><input type="radio" name="radio6"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Performance Feedback</th>
+                    <td><input type="radio" name="radio7"></td>
+                    <td><input type="radio" name="radio7"></td>
+                    <td><input type="radio" name="radio7"></td>
+                    <td><input type="radio" name="radio7"></td>
+                    <td><input type="radio" name="radio7"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Opportunities for Advancement</th>
+                    <td><input type="radio" name="radio8"></td>
+                    <td><input type="radio" name="radio8"></td>
+                    <td><input type="radio" name="radio8"></td>
+                    <td><input type="radio" name="radio8"></td>
+                    <td><input type="radio" name="radio8"></td>
+                </tr>
+                <tr>
+                    <th style="text-align:left ;">Employee Evaluations</th>
+                    <td><input type="radio" name="radio9"></td>
+                    <td><input type="radio" name="radio9"></td>
+                    <td><input type="radio" name="radio9"></td>
+                    <td><input type="radio" name="radio9"></td>
+                    <td><input type="radio" name="radio9"></td>
+                </tr>
+            </table>
+            <li>Do You feel Valued at Work?</li>
+            <form>
+                <input type="radio" id="no" name="no-yes" value="no">
+                <label for="no">NO</label><br>
+                <input type="radio" id="yes" name="no-yes" value="yes">
+                <label for="yes">YES</label><br>
+            </form>
+            <p>If No, Please explain:</p>
+            <textarea placeholder="type here...."></textarea>
+            <br>
+            <li>Do you have the resources you need to perform your job well?</li>
+            <form>
+                <input type="radio" id="no" name="no-yes" value="no">
+                <label for="no">NO</label><br>
+                <input type="radio" id="yes" name="no-yes" value="yes">
+                <label for="yes">YES</label><br>
+            </form>
+            <p>If No, Please explain:</p>
+            <textarea placeholder="type here...."></textarea>
+            <br>
+            <li>Does your job cause you stress or anxiety?</li>
+            <form>
+                <input type="radio" id="no" name="no-yes" value="no">
+                <label for="no">NO</label><br>
+                <input type="radio" id="yes" name="no-yes" value="yes">
+                <label for="yes">YES</label><br>
+            </form>
+            <p>If Yes, Please explain:</p>
+            <textarea placeholder="type here...."></textarea>
+            <br>
+            <li>Are sufficient efforts being made to solicit colleague opinions and feedback?</li>
+            <form>
+                <input type="radio" id="no" name="no-yes" value="no">
+                <label for="no">NO</label><br>
+                <input type="radio" id="yes" name="no-yes" value="yes">
+                <label for="yes">YES</label><br>
+            </form>
+            <p>If Yes, Please explain:</p>
+            <textarea placeholder="type here...."></textarea>
+            <br>
+        </ol>
+            <p>Please Provide Any Additional Feedback</p>
+            <textarea placeholder="type here..."></textarea>
+            <form action="/action_page.php" method="get">
+                <button>SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>

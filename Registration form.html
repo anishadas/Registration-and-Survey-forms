@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .container {
+            max-height: 80%;
+            max-width: 80%;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+
+        .details h2,
+        .meds h2,
+        .contact h2 {
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        .details label {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px 1px 2px 0px;
+            width: 120px;
+            display: inline-block;
+        }
+
+        .age label {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px 1px 2px 0px;
+            width: 90px;
+            display: inline-block;
+        }
+
+        .details input {
+            margin-bottom: 8px;
+            padding: 2px;
+            width: 300px;
+            height: 20px;
+            font-size: 1em;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(201, 226, 235);
+            opacity: 0.5;
+        }
+
+        .details .age input {
+            width: 120px;
+        }
+
+        .contact label {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px 1px 2px 0px;
+            width: 180px;
+            display: inline-block;
+        }
+
+        .contact input {
+            margin-bottom: 8px;
+            padding: 2px;
+            width: 220px;
+            height: 20px;
+            font-size: 1em;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(201, 226, 235);
+            opacity: 0.5;
+        }
+
+        .meds .meds1 {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center;">
+            SUMMER SCHOOL REGISTRATION FORM
+        </h1>
+        <p style="text-align:center;">
+            Please print and return to child’s school
+            Confirmations will be sent out prior to start of program
+        </p>
+        <hr>
+        <p>
+            <b>What School Do You Attend?</b>
+        </p>
+        <form>
+            <input type="radio" id="baker" name="school">
+            <label for="baker">Baker</label>
+            <input type="radio" id="creek" name="school">
+            <label for="creek">First Creek</label>
+            <input type="radio" id="gary" name="school">
+            <label for="gary">Gary</label>
+            <input type="radio" id="bryant" name="school">
+            <label for="bryant">Bryant</label>
+            <input type="radio" id="mason" name="school">
+            <label for="mason">Mason</label>
+            <input type="radio" id="stewart" name="school">
+            <label for="stewart">Stewart</label>
+            <input type="radio" id="meeker" name="school">
+            <label for="meeker">Meeker</label>
+            <input type="radio" id="trueman" name="school">
+            <label for="trueman">Trueman</label>
+            <input type="radio" id="lee" name="school">
+            <label for="lee">Jason Lee</label>
+        </form>
+        <br>
+        <p>
+            <b>Middle School Programs</b>
+        </p>
+        <form>
+            <input type="radio" id="jump" name="middle">
+            <label for="jump">Jump start</label>
+            <input type="radio" id="camps" name="middle">
+            <label for="camps">Middle School Camps(limited sites)</label>
+            <input type="radio" id="ELL" name="middle">
+            <label for="ELL">Middle School ELL</label>
+        </form>
+        <br>
+        <div class="details">
+            <h2>Student Information</h2>
+            <form>
+                <label for="cname">Student's Name:</label>
+                <input id="cname" name="cname" type="text">
+                <label for="id" style="margin:0px -88px 0px 124px;">ID#</label>
+                <input id="id" name="id" type="number">
+                <br>
+                <label for="address">Address</label>
+                <input id="address" name="address" type="text">
+                <br>
+                <label for="Eaddress">Email Address</label>
+                <input id="Eaddress" name="Eaddress" type="email">
+                <br>
+                <label for="home">Home Phone</label>
+                <input id="home" name="home" type="number">
+                <label for="cell" style="margin:0px -41px 0px 78px;">Cell Phone</label>
+                <input id="cell" name="cell" type="number">
+                <br>
+                <div class="age">
+                    <label for="age-info">Age Information:</label>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                    <label for="age" style="margin:0px -57px 0px 60px;">Age</label>
+                    <input id="age" name="age" type="number">
+                </div>
+            </form>
+        </div>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <form>
+                <label for="pname">Parent/Guardian Name</label>
+                <input id="pname" name="pname" type="text" style="width:400px;">
+                <br>
+                <label for="home">Parent's Phone Number</label>
+                <input id="home" name="home" type="number">
+                <br>
+                <label for="emname">Emergency Contact Name</label>
+                <input id="emname" name="emname" type="text">
+                <label for="rname" style="margin:0px -10px 0px 79px ;">Relationship to Student</label>
+                <input id="rname" name="rname" type="text">
+                <br>
+                <label for="emer">Emergency Phone Number</label>
+                <input id="emer" name="emer" type="number">
+                <label for="Aemer" style="margin:0px -10px 0px 79px ;">Alternate Number</label>
+                <input id="Aemer" name="Aemer" type="number">
+            </form>
+        </div>
+        <div class="meds">
+            <h2>Medical Information</h2>
+            <div class="meds1">
+                <p style="width:500px ;">
+                    Does your child have a life-threatening health condition? (See Note below)
+                </p>
+                <form style="width:130px;padding-top: 16px;">
+                    <input type="radio" id="yes" name="health">
+                    <label for="yes" style="margin:0px 10px 0px 0px ;">YES</label>
+                    <input type="radio" id="no" name="health">
+                    <label for="no">NO</label>
+                </form>
+            </div>
+            <label for="exp">If Yes, Please explain:</label>
+            <input id="exp" name="exp" type="text" 
+            style="
+            width:730px;
+            font-size: 1em;
+            padding: 2px;
+            border:none;
+            border-bottom: 2px solid black;
+            background-color: rgb(231, 240, 243);
+            ">
+            <br>
+            <input id="exp" name="exp" type="text" 
+            style="
+            width:875px; 
+            margin: 20px 10px 0px 0px;
+            font-size: 1em;
+            padding: 2px;
+            border:none;
+            border-bottom: 2px solid black;
+            background-color: rgb(231, 240, 243);
+            ">
+            <div class=" meds1">
+                <p style="width:500px ;">
+                    Does your child need medication at school?
+                </p>
+                <form style="width:130px;padding-top: 16px;">
+                    <input type="radio" id="yes" name="health">
+                    <label for="yes" style="margin:0px 10px 0px 0px ;">YES</label>
+                    <input type="radio" id="no" name="health">
+                    <label for="no">NO</label>
+                </form>
+            </div>
+            <label for="exp">If Yes, Please explain:</label>
+            <input id="exp" name="exp" type="text" 
+            style="
+            width:730px;
+            font-size: 1em;
+            padding: 2px;
+            border:none;
+            border-bottom: 2px solid black;
+            background-color: rgb(231, 240, 243);
+            ">
+            <br>
+            <input id="exp" name="exp" type="text" 
+            style="
+            width:875px; 
+            margin: 20px 10px 0px 0px;
+            font-size: 1em;
+            padding: 2px;
+            border:none;
+            border-bottom: 2px solid black;
+            background-color: rgb(231, 240, 243);
+            ">
+            <div class="meds1">
+                <p style="width:500px;">
+                    Does your child have any other medical issues of which we need to be aware?
+                </p>
+                <form style="width:130px;padding-top: 16px;">
+                    <input type="radio" id="yes" name="health">
+                    <label for="yes" style="margin:0px 10px 0px 0px ;">YES</label>
+                    <input type="radio" id="no" name="health">
+                    <label for="no">NO</label>
+                </form>
+            </div>
+            <label for="exp">If Yes, Please explain:</label>
+            <input id="exp" name="exp" type="text" 
+            style="
+            width:730px;
+            font-size: 1em;
+            padding: 2px;
+            border:none;
+            border-bottom: 2px solid black;
+            background-color: rgb(231, 240, 243);
+            ">
+            <br>
+            <input id="exp" name="exp" type="text" 
+            style="
+            width:875px; 
+            margin: 20px 10px 0px 0px;
+            font-size: 1em;padding: 2px;
+            border:none;
+            border-bottom: 2px solid black;
+            background-color: rgb(231, 240, 243);
+            ">
+            <br>
+            <hr>
+        </div>
+        <p style="font-family:'Times New Roman', Times, serif"><b><i><em>NOTE:</em> Parent/Guardian are responsible for providing the required medication to 
+            designated program staff on the first day of summer school. Medication currently 
+            held at the school must be picked up prior to the end of the regular school year. 
+            Summer School Staff will not have access to medications from the regular school 
+            year.If registration is completed prior to end of school year, this information 
+            will be transferred for the student. If registration is completed after the school 
+            year has ended, the parent/guardian is responsible for providing a copy to 
+            designated program staff on or before the student’s first day in summer school. 
+            A notification will be communicated to the summer school instructor.</i></b></p>
+    </div>
+</body>
+</html>

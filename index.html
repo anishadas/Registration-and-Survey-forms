@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .div2 {
+            background-color: rgb(196, 217, 217);
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding:0px 60px 60px 60px;
+            box-sizing: border-box;
+        }
+
+        .div2 h1,p {
+            text-align: center;
+            margin: 0 0 15px 0px;
+        }
+        form{
+            padding-left: 50px;
+        }
+        input[type=email],
+        input[type=password] {
+            padding: 10px;
+            margin: 0 0px 15px 10px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 80%;
+            font-size: 1rem;
+            border: 1px solid gray;
+        }
+
+        .div3 {
+            width: 82%;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .login {
+            display: inline-block;
+            width: 80%;
+            margin: 10px;
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+
+        .google {
+            display: inline-block;
+            width: 80%;
+            margin: 10px;
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .last {
+            margin: 5px;
+            position: relative;
+            right: 40px;
+        }
+
+        .google:hover {
+            background-color: lightcyan;
+            color: red;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .login:hover {
+            cursor: pointer;
+            font-size: larger;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div2">
+        <marquee style="margin: 0;" bgcolor="skyblue" direction="left">
+            <a href="Registration form.html" target="_blank">Click to fill the Student Registration form</a>
+        </marquee>
+        <marquee bgcolor="yellow" direction="right">
+            <a href="survey form.html" target="_blank">Click to fill the Survey form</a>
+        </marquee>
+        <h1 style="font-family:monospace;font-size:3.5em;">Welcome Back</h1>
+        <p>please enter your details</p>
+        <form action="https://ethics.org.au/">
+            <div><label for="mail">Email</label></div>
+            <input type="email" id="mail" name="mail" placeholder="xyz@gmail.com">
+            <div><label for="password">Password</label></div>
+            <input type="password" id="password" name="password">
+            <div class="div3">
+                <label for="check">Remember me
+                    <input type="checkbox" id="check">
+                </label>
+                <a href="" target="_blank">
+                    Forgot Password
+                </a>
+            </div>
+            <button class="login">Log in</button>
+            <button class="google">
+                <img src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" height="20"
+                    width="20" style="border-radius:50%">
+                <span>Sign in with Google</span>
+            </button>
+        </form>
+        <p class="last">
+            Don't have an account?
+            <a href="Registration form.html" target="_blank">
+                Sign up for free
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
